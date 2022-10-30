@@ -1,12 +1,116 @@
-@font-face {
-    font-family: 'Poppins';
+/*@font-face {
     src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-}
+}*/
 
 * {
-    font-family: 'Poppins';
+    font-family: 'Segoe UI';
     margin: 0;
     padding: 0;
     position: relative;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    background-color: hsla(210, 16%, 93%, 0.8);
+    width: 100%;
+    height: 10%;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.base-opcoes {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 120px;
+    left: 20px !important;
+}
+
+.base-opcoes  > ul  > li {
+    display: inline-block;
+    height:  30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.base-opcoes  > ul  > li :hover {
+    border-bottom: 5px #000 solid;;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.base-search {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-input {
+    position: absolute;
+    background-color: #FFF;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#iconSearch {
+    height: 80%;
+    padding-right: 5px;;
+    cursor: pointer;
+}
+
+.sectionCapa {
+    background-image: url('../img/capa.jpg');
+    top: 10%;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 64px;
+}
+
+.teste {
+    top: 10%;
+    width: 100%;
+    height: 800px;
+    border: 1px red solid;
 }
