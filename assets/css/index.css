@@ -12,6 +12,7 @@
 
 body {
     width: 100%;
+    min-width: 800px;
     height: 100vh;
 }
 
@@ -119,9 +120,59 @@ h1 {
     font-size: 64px;
 }
 
-.teste {
+.main {
     top: 10%;
     width: 100%;
-    height: 800px;
-    border: 1px red solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.baseLivros {
+    width: 95%;
+    height: 250px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.baseLivros > span {
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.baseArquivos {
+    top: 10px !important;
+    border: 1px #c3c3c3 solid;
+    width: 200px;
+    height: 85%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.baseArquivos > img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.baseArquivos:hover {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 50%, rgba(177,177,177,1) 100%);
+    width: 300px;
+    height: 100%;
+    box-shadow: 2px 2px 20px 5px;
+    z-index: 3;
 }
