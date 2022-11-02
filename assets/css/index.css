@@ -40,22 +40,33 @@ body {
     left: 20px !important;
 }
 
+ul {
+    padding-top: 1%;
+    min-width: 600px;
+}
+
 .base-opcoes  > ul  > li {
     display: inline-block;
     height:  30px;
-    margin-left: 5px;
-    margin-right: 5px;
     list-style: none;
     text-decoration: none;
-
+    padding-top: 0.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
 }
 
-.base-opcoes  > ul  > li :hover {
-    border-bottom: 5px #000 solid;;
+.base-opcoes >  ul > li:hover  {
+    background-color: #FFF;
+    transition: 0.2s;
+    border-radius: 5px;
+    border-bottom: 3px brown solid;
 }
 
-a {
+.base-opcoes  > ul  > li > a {
     text-decoration: none;
+    width: 100% !important;
+    height: 100% !important;
     color: #000;
 }
 
